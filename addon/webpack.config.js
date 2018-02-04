@@ -5,24 +5,24 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: __dirname + '/dist',
+    path: __dirname + '/dist'
   },
-  watch: true,
   watchOptions: {
     poll: 100
   },
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
+     {
+      test: /\.js$/,
+      exclude: /(node_modules|bower_components)/,
+      use: {
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/preset-env', "@babel/preset-react",],
+          plugins: ["@babel/plugin-proposal-class-properties"]
         }
-      },
+      }
+    },
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
@@ -31,6 +31,5 @@ module.exports = {
   },
   stats: {
     colors: true
-  },
-  devtool: 'source-map'
+  }
 };

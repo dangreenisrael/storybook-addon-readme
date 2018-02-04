@@ -1,0 +1,36 @@
+{
+  "name": "storybook-addon-readme",
+  "version": "0.0.1",
+  "description": "Automatically add a readme to your stories",
+  "keywords": ["addon", "storybook", "readme"],
+  "license": "MIT",
+  "main": "src/index.js",
+  "jsnext:main": "src/index.js",
+  "repository": {
+    "type": "git"
+  },
+  "scripts": {
+    "prepare": "webpack",
+    "dev": "webpack --watch",
+    "format": "prettier --single-quote --write '**/*.{js,json}'"
+  },
+  "peerDependencies": {
+    "@storybook/addons": "^3.3.12"
+  },
+  "dependencies": {
+    "github-markdown-css": "^2.10.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "@babel/preset-react": "^7.0.0-beta.39",
+    "babel-core": "^7.0.0-beta.39",
+    "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.9",
+    "style-loader": "^0.20.1",
+    "webpack": "^3.10.0"
+  }
+}

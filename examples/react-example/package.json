@@ -1,12 +1,11 @@
 {
-  "name": "my-app",
+  "name": "react-example",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.0",
-    "storybook": "^1.0.0"
+    "react-scripts": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -16,10 +15,26 @@
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  },
   "devDependencies": {
     "@storybook/addon-actions": "^3.3.12",
     "@storybook/addon-links": "^3.3.12",
+    "@storybook/addons": "^3.3.12",
     "@storybook/react": "^3.3.12",
-    "babel-core": "^6.26.0"
+    "@babel/core": "^7.0.0-beta.39",
+    "babel-core": "^6.26.0",
+    "storybook-addon-readme": "*"
   }
 }
